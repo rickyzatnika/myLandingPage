@@ -1,0 +1,73 @@
+@import url('../css/fonts.css');
+::selection {
+  color: rgb(70, 104, 99);
+}
+
+:root {
+
+  --Abel: 'Abel', cursive;
+  --Anton: 'Anton', cursive;
+  --Josefin: 'Josefin', cursive;
+  --Lexend: 'Lexend', cursive;
+  --Livvic: 'Livvic', cursive;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+.content {
+  text-align: center;
+  padding: 0 16%;
+}
+
+#time {
+  font-family: var(--Abel);
+  font-size: 8rem;
+  color: rgb(211, 211, 211);
+}
+h1 {
+  margin-bottom: 3rem;
+  color: turquoise;
+  font-family: var(--Livvic);
+  
+ 
+}
+h2 {
+  margin-bottom: .5rem;
+  color: white;
+  font-family: var(--Abel);
+  
+}
+#focus {
+  border: 2px solid rgb(151, 151, 151);
+  border-radius: 1rem;
+  box-shadow: inset 0 0 10px rgb(163, 163, 163), 4px 2px 8px rgb(117, 117, 117);
+  outline: none;
+}
+
+@media(max-width: 700px){
+  #time {
+    font-size: 6rem;
+  }
+}
